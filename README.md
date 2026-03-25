@@ -31,3 +31,18 @@ Untuk membedakan antara pesan chat biasa dan transfer file, program ini mengguna
   * **`/download <filename>`**: Klien meminta file. Jika ada, server merespons dengan header `FILE_INCOME` lalu menembakkan *byte chunk* file tersebut untuk ditulis oleh klien secara lokal.
 
 ## Screenshot Hasil
+
+### 1\. Bukti Multi-Client & Broadcast Chat
+
+Server berhasil menerima koneksi dari dua klien secara bersamaan. Pesan yang diketik oleh satu klien berhasil di-broadcast ke klien lainnya.
+<img width="1919" height="1015" alt="image" src="https://github.com/user-attachments/assets/e1ae184e-a52b-4513-a03f-62ed10562192" />
+
+### 2\. Bukti Fitur Upload File
+
+Klien berhasil menggunakan command `/upload` dan mengirim file ke direktori server.
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/ba08bebf-0657-4824-94a1-bae57c623a4c" />
+
+### 3\. Bukti Fitur List & Download File
+
+Klien lainnya dapat melihat file yang baru diupload dengan perintah `/list`, lalu mengambilnya menggunakan perintah `/download`.
+<img width="1917" height="1015" alt="image" src="https://github.com/user-attachments/assets/5ef34f85-e2a7-4d93-a6f3-85c930b76492" />
